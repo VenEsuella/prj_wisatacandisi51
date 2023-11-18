@@ -14,7 +14,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
   final TextEditingController _passwordController = TextEditingController();
 
-  String _errorText = '';
+  final String _errorText = '';
 
   bool _isSignedIn = false;
 
@@ -25,7 +25,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       // TODO : 2. Pasang AppBar
       appBar: AppBar(
-        title: Text('Sign In'),
+        title: const Text('Sign In'),
       ),
       // TODO : 3. Pasang Body
       body: Center(
@@ -41,13 +41,13 @@ class _SignInScreenState extends State<SignInScreen> {
                 // TODO : 5. Pasang TextFormField Nama Pengguna
                 TextFormField(
                   controller: _usernameController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Nama Pengguna",
                     border: OutlineInputBorder(),
                   ),
                 ),
                 // TODO : 6. Pasang TextFormField Kata Sandi
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextFormField(
@@ -70,7 +70,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   obscureText: _obscurePassword,
                 ),
                 // TODO : 7. Pasang TextFormField Sign In
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ElevatedButton(
@@ -78,7 +78,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   child: Text('Sign In'),
                 ),
                 // TODO : 8. Pasang TextButton Sign Up
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextButton(
@@ -92,7 +92,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     children: <TextSpan>[
                       TextSpan(
                         text: 'Daftar di sini.',
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.blue,
                           decoration: TextDecoration.underline,
                           fontSize: 16,

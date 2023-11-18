@@ -16,14 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       // TODO : 1 Buat appbar dengan judul Wisata Candi
       appBar: AppBar(
-        title: Text('Wisata Candi'),
+        title: const Text('Wisata Candi'),
       ),
       // TODO : 2 Buat body dengan GridView.builder
       body: Padding(
         padding: const EdgeInsets.all(8),
         child: GridView.builder(
-          gridDelegate:
-              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2),
           itemCount: candiList.length,
           itemBuilder: (context, index) {
             Candi candi = candiList[index];
