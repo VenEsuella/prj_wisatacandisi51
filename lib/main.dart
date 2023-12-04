@@ -36,7 +36,24 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: SignUpScreen(),
+      // theme: ThemeData(
+      //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      //   useMaterial3: true,
+      // ),
+      home: MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/homescreen': (context) => const HomeScreen(),
+        '/signin': (context) => SignInScreen(),
+        '/signup': (context) => SignUpScreen()
+      },
+      //SignUpScreen()
+      //MainScreen()
+      //HomeScreen()
+      //SearchScreen(),
+      //SignInScreen()
+      //ProfileScreen(),
+      //DetailScreen(candi: candiList[0]),
     );
   }
 }
